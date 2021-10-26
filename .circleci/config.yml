@@ -18,7 +18,7 @@
         - run:
             name: Configure server
             command: |
-              ansible-playbook -i inventory.txt main4.yml
+              ansible-playbook -i inventory.txt .yml
 
   workflows:
     my_workflow:
