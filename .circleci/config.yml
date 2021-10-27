@@ -13,7 +13,7 @@
               name: Create Cloudformation Stack
               command: |
                 aws cloudformation deploy \
-                  --template-file main4.yml \
+                  --template-file template.yml \
                   --stack-name myStack 
 
     configure_infrastructure: 
