@@ -17,6 +17,7 @@
                   --stack-name myStack 
 
     configure_infrastructure: 
+      needs: create_infrastructure
       docker:
         - image: python:3.7-alpine3.11
       steps:
