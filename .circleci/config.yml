@@ -17,7 +17,6 @@
                   --stack-name myStack 
 
     configure_infrastructure: 
-      
       docker:
         - image: python:3.7-alpine3.11
       steps:
@@ -38,6 +37,8 @@
     my_workflow:
       jobs:
         - create_infrastructure
-        - configure_infrastructure
+        - configure_infrastructure:
+            requires:
+              - create_infrastructure
 
       
